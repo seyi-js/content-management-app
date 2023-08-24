@@ -39,4 +39,4 @@ jobs:
           DB_PORT: 5432
           PORT: 5000
           JWT_SECRET: secret
-        run: npm run test
+        run: npm run pgdb:migrate && npm run test
