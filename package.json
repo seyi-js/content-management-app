@@ -7,7 +7,7 @@
     "start": "node ./dist/app.js",
     "dev": "nodemon -L -e ts --exec \"npm run pgdb:migrate && npm run build && npm start\"",
     "build": "tsc",
-    "test": "jest --watchAll --detectOpenHandles --forceExit",
+    "test": "jest --detectOpenHandles --forceExit",
     "pgdb:migrate": "npx sequelize-cli db:migrate",
     "pgdb:migrate:undo": "npx sequelize-cli db:migrate:undo",
     "pgdb:migration:generate": "npx sequelize-cli migration:generate --name ",
